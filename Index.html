@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <!-- Hero -->
+        <header class="hero">
+            <div class="back-img">
+                <h1 class="hero-font">Samuel Gutiérrez</h1>
+                <h5 class="hero-font">Ingeniero Multimedia</h5>
+            </div>
+            <div class="separator"></div>
+        </header>
+
+        <!-- Frase y sobre mi -->
+        <section class="sobre-mi">
+            <div class="phrase">
+                <h1 class="quotes">"</h1>
+                <h3 class="quotes-phr">Detras de una buena idea, se esconde un reto tecnico</h3>
+                <h1 class="quotes">"</h1>
+            </div>
+            <div class="desc-per">
+                <img src="Assets/Group 1.png" class="img-per">
+                <div class="desc">
+                    <h5>Ingeniero Multimedia apasionado por los videojuegos y especializado en C++, Python y Unity. Profesional autodidacta con gran capacidad de aprendizaje, busco mi primera oportunidad como Artista Técnico para optimizar la integración entre código y arte visual.</h5>
+                </div>
+                <div class="screen"></div>
+            </div>
+            <div class="separator"></div>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills">
+            <h1 class="hero-font">Skills</h1>
+            <div class="skills-cont" id="skills"></div>
+            <div class="separator"></div>
+        </section>
+
+        <!-- Projects -->
+        <section class="projects">
+            <div class="projects-cont">
+                <h3 class="projects-tit">Proyectos</h3>
+                <div class="projects-scroll"></div>
+                <div class="masonry-container" id="masonry"></div>
+            </div>
+            <div class="separator"></div>
+        </section>
+
+        <!-- Contacts -->
+        <footer class="contact">
+            <div class="contact-back"></div>
+            <div class="contact-section">
+                <h3 class="mb-4">Contactame!</h3>
+                <form>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label"><h6>Nombre</h6></label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label"><h6>Email</h6></label>
+                    <input type="email" class="form-control" id="email" placeholder="tu@email.com">
+                </div>
+                <div class="mb-3">
+                    <label for="razon" class="form-label"><h6>Razón</h6></label>
+                    <textarea class="form-control" id="razon" rows="4" placeholder="¿En qué podemos ayudarte?"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                </form>
+            </div>
+        </footer>
+        
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>

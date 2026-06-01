@@ -1,0 +1,452 @@
+@import url('https://fonts.cdnfonts.com/css/shavina-elegance');
+@import url('https://fonts.cdnfonts.com/css/adega-serif?styles=25632');
+
+body{
+    background-color: black;
+}
+
+h1{
+    font-size: clamp(2.5rem, 6vw, 6rem);
+    font-family: 'Shavina Elegance', sans-serif;
+}
+h2{
+    font-size: clamp(2rem, 5vw, 5rem);
+    font-family: 'Shavina Elegance', sans-serif;
+}
+h3{
+    font-size: clamp(1.75rem, 4vw, 4rem);
+    font-family: 'Shavina Elegance', sans-serif;
+}
+h4{
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    font-family: 'Adega Serif', sans-serif;
+}
+h5{
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
+    font-family: 'Adega Serif', sans-serif;
+}
+h6{
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-family: 'Adega Serif', sans-serif;
+}
+
+.hero{
+    position: relative;
+    background-image: url(Assets/Girardota.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #2F363C;
+    background-blend-mode: difference;
+    height: 100vh;
+    z-index: 100;
+}
+
+.back-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-image: url(Assets/Girardota.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: stretch;
+    z-index: 2;
+    mask-size: contain;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-image:
+    repeating-radial-gradient(
+        circle,
+        transparent 0 clamp(4px, 0.5vw, 10px),
+        black clamp(4px, 0.5vw, 10px) clamp(8px, 1vw, 20px)
+    ),
+    url(Assets/F1.png);
+}
+
+.hero-font{
+    color: white;
+    mix-blend-mode: difference;
+    text-shadow:
+    0.2vw 0.2vw 0.4vw blue,
+    -0.2vw -0.2vw 0.4vw olive;
+}
+
+.separator{
+    position: absolute;
+    z-index: 10;
+    width: stretch;
+    bottom: -41px;
+    height: 80px;
+    background: #111;
+    mask: radial-gradient( circle at 40px 80px, transparent 40px, black 41px);
+    mask-size: 80px 80px;
+}
+
+.sobre-mi{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url(Assets/2daSeccion.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: color-burn;
+    background-color: #bc8f54;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.phrase{
+    display: flex;
+    height: 20vh;
+    padding: 0px 2vw;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 255, 208);
+    text-shadow:
+    0.2vw 0.2vw 0.4vw rgb(0, 0, 255),
+    -0.2vw -0.2vw 0.4vw olive;
+    background-color: #f5ae9c73;
+    backdrop-filter: blur(5px);
+    border: 0.7vw solid transparent;
+    border-image: repeating-linear-gradient(45deg, rgb(0 0 0), rgb(86 0 0) 10px, rgb(0 255 208) 10px, rgb(54 126 255) 20px) 30 / 1 / 0 stretch;
+}
+
+.quotes-phr{
+    mix-blend-mode: overlay;
+}
+
+.quotes{
+    font-size: clamp(4rem, 15vw, 8rem);
+    margin: 0 2vw;
+}
+
+.desc-per{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.img-per{
+    width: 15vw;
+    aspect-ratio: 5/6;
+    transform: rotate(350deg);
+    border: 0.7vw solid #D9D9D9;
+    box-shadow: black 1vw 1vw;
+}
+
+.desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    margin-left: 8vw;
+    padding: 2vw;
+    color: aliceblue;
+    z-index: 2;
+}
+
+.screen{
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    width: 50vw;
+    height: 50vh;
+    background-image: repeating-conic-gradient(aqua 0 0.0001%,#3b4adf 0 0.0002%);
+    mix-blend-mode: hue;
+    backdrop-filter: blur(3px);
+    z-index: 0;
+}
+
+.skills{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url(Assets/FondoSkills.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.skills-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    width: 80vw;
+}
+
+.skills-item{
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 1;
+    z-index: 1;
+    mix-blend-mode: normal;
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+.skills-parent{
+    position: relative;
+}
+
+.skills-light{
+    background: repeating-conic-gradient(olive 0 2%,#0000 0 4%);
+    mix-blend-mode: plus-lighter;
+    width: 150%;
+    height: 150%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 0;
+    transition: transform 0.5s ease;
+    mask-size: contain;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-image: radial-gradient(white, transparent 80%);
+    border-radius: 50%;
+}
+
+.skills-shine{
+    position: relative;
+    background-color: gold;
+    z-index: 0;
+    transform: scale(1) rotate(var(--rot));
+    transition: transform 0.5s ease;
+    mask-size: contain;
+    mask-position: center;
+    mask-repeat: no-repeat;
+}
+
+.skills-parent:hover .skills-light{
+    transform: translate(-50%, -100%) scale(2);
+}
+
+.skills-parent:hover .skills-item{
+    mix-blend-mode: hard-light;
+}
+
+.skills-parent:hover .skills-shine{
+    rotate: (var(--rot));
+    transform: scale(1.5) translate(0%, -50%);
+}
+
+.projects{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-image: url(Assets/Polillas.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.projects-tit{
+    color: whitesmoke;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: -3vw;
+    text-shadow:
+    0.1vw 0.1vw 0vw aqua,
+    -0.1vw -0.1vw 0vw olive;
+}
+
+.projects-cont{
+    position: relative;
+    background: conic-gradient(at 100% 100%,rgb(0, 0, 255), rgba(0, 255, 255, 0.592));
+    background-blend-mode: hue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 90vw;
+    border: 0.7vw double blue;
+    backdrop-filter: blur(5px);
+}
+
+.projects-scroll{
+    background: repeating-radial-gradient(circle, blue 0 clamp(4px, 0.5vw, 10px),black clamp(4px, 0.5vw, 10px) clamp(8px, 1vw, 20px));
+    width: 80vw;
+    height: stretch;
+    mask-size: contain;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-image: radial-gradient(white, transparent 70%);
+}
+
+.masonry-container {
+    position: absolute;
+    height: 60vh;
+    width: 50vw;
+    column-count: 4;
+    left: 35%;
+    column-gap: 15px;
+}
+.masonry-item {
+    display: inline-block;
+    width: 100%;
+}
+.masonry-item img {
+    display:block;
+    width: 100%;
+}
+
+.contact{
+    position: relative;
+    overflow: hidden;
+    height: 90vh;
+}
+
+.contact-back{
+    position: absolute;
+    inset: 0;
+    background-image: url(Assets/Final.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    mask-image: linear-gradient(to right,transparent 45%,black 80%);
+    mask-size: contain;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    z-index: 0;
+}
+
+.contact-section{
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    color: #D9D9D9;
+    height: 50%;
+}
+
+@media (max-width: 768px) {
+ 
+  .back-img {
+    padding: 0 6vw;
+    text-align: center;
+  }
+ 
+  .sobre-mi {
+    height: auto;
+    padding: 10vw 5vw;
+  }
+ 
+  .phrase {
+    height: auto;
+    padding: 4vw;
+    text-align: center;
+  }
+ 
+  .quotes {
+    font-size: clamp(3rem, 12vw, 5rem);
+    margin: 0 1vw;
+  }
+ 
+  .desc-per {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6vw;
+    gap: 6vw;
+  }
+ 
+  .img-per {
+    width: 50vw;
+    box-shadow: black 3vw 3vw;
+  }
+ 
+  .desc {
+    width: 88vw;
+    margin-left: 0;
+    padding: 4vw;
+    text-align: center;
+  }
+ 
+  .screen {
+    display: none;
+  }
+
+  .skills {
+    height: auto;
+    padding: 10vw 0;
+  }
+ 
+  .skills-cont {
+    flex-wrap: wrap;
+    height: auto;
+    width: 90vw;
+    gap: 6vw;
+    justify-content: center;
+  }
+ 
+  .skills-item,
+  .skills-shine {
+    width: 10vw !important;
+  }
+
+  .projects {
+    height: auto;
+    padding: 10vw 0;
+  }
+ 
+  .projects-tit {
+    letter-spacing: -6vw;
+    writing-mode: horizontal-tb;
+    text-orientation: mixed;
+    letter-spacing: normal;
+    margin-bottom: 4vw;
+  }
+ 
+  .projects-cont {
+    flex-direction: column;
+    height: auto;
+    width: 95vw;
+    padding: 4vw;
+  }
+ 
+  .projects-scroll {
+    display: hidden;
+  }
+ 
+  .masonry-container {
+    position: static;
+    width: 100%;
+    height: auto;
+    column-count: 2;
+    left: unset;
+    margin-top: 4vw;
+  }
+
+  .contact {
+    height: auto;
+    padding: 10vw 5vw;
+  }
+ 
+  .contact-back {
+    mask-image: linear-gradient(to bottom, transparent 0%, black 50%);
+    opacity: 0.4;
+  }
+ 
+  .contact-section {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+}
+
